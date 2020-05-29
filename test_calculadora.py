@@ -1,10 +1,10 @@
-from calculadora import suma
+from calculadora import suma, resta, multiplicacion, division, raizcuadrada
 
 def test_suma():
 	# arrange
 	valor1 = 5
 	valor2 = 7
-	resultadoEsperado = 14
+	resultadoEsperado = 12
 	# act
 	r = suma(valor1, valor2)
 	# assert
@@ -57,6 +57,18 @@ def test_division():
 		print("MULTIPLICACION INCORRECTA------------------")
 
 
+def test_raiz():
+	# arrange
+	valor1 = 50
+	resultadoEsperado = 7.0710678
+	# act
+	r=raizcuadrada(valor1)
+	# assert
+	print(r)
+	if r == resultadoEsperado:
+		print("RAIZ CORRECTA")
+	else:
+		print("RAIZ INCORRECTA------------------")
 
 
 if __name__ == "__main__":
@@ -64,3 +76,4 @@ if __name__ == "__main__":
 	test_resta()
 	test_multiplicacion()
 	test_division()
+	test_raiz()
