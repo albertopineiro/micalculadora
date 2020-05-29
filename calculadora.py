@@ -24,4 +24,4 @@ def raizcuadrada(val1):
 	# Aplicamos la fórmula de Bakhshali para calcular la raiz cuadrada
 	raizcuadrada = (((n*n*n*n)+(6*(n*n)*val1)+(val1*val1))/(4*(n*n*n)+(4*n*val1)))
 	return raizcuadrada
-  
+	
