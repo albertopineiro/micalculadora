@@ -65,7 +65,7 @@ def test_raiz():
 	r=raizcuadrada(valor1)
 	# assert
 	print(r)
-	if r == resultadoEsperado:
+	if  abs(r-resultadoEsperado) < 0.0001:
 		print("RAIZ CORRECTA")
 	else:
 		print("RAIZ INCORRECTA------------------")
